@@ -1,6 +1,6 @@
 Feature: Delete single ID
 Scenario: Delete id
-* Given url 'https://reqres.in/'
-* Given path 'api/users',2
-* When method DELETE
-* Then status 204
+    * url 'https://reqres.in/api/users'
+* path 'api/users/',id
+* method DELETE
+* status 204
