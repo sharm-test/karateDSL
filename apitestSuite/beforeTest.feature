@@ -1,11 +1,11 @@
 Feature: Delete all created ids
 Scenario: Delete all the created ids
-* url 'https://reqres.in/api/users?page=2'
+* url url
 * method GET
 * def dataids = $.data[*].id
 #get all the ids that are available
-* print dataids
+* print "The data ids are :",dataids
 * def createdids = karate.mapWithKey(dataids,'id')
-* print createdids
+* print "JSON array of ids :", createdids
 #call the delete feature for each of the ids above
 * def delid = call read('deleteid.feature') createdids

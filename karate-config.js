@@ -39,8 +39,8 @@ if(env == 'syst-az2'){
     config.url = 'https://reqres.in/api/users?page=1'
 
 }
- karate.configure('connectTimeout',1)
- karate.configure('readTimeout',1)
+ karate.configure('connectTimeout',10000)
+ karate.configure('readTimeout',10000)
  karate.configure('ssl','TLSv1.2')
 
 return config;
