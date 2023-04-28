@@ -2,6 +2,7 @@ Feature: Delete all created ids
 Scenario: Delete all the created ids
 * url url
 * method GET
+  * print response
 * def dataids = $.data[*].id
 #get all the ids that are available
 * print "The data ids are :",dataids
