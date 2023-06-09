@@ -16,6 +16,7 @@ if(env == 'test-az1'){
     config.clientkey = '',
     config.clientSecret = '',
     config.url = 'https://reqres.in/api/users?page=2'
+    config.SingleUserUrl = 'https://reqres.in/api/users/2'
 
 }
 if(env == 'test-az2'){
