@@ -36,8 +36,7 @@ public class Recv {
     public List<String> getList(){
        return messageList;
     }
-    public static void main( String[] args) throws IOException, TimeoutException, InterruptedException {
-       Recv r = new Recv();
+    public static void main( String[] args) throws IOException, TimeoutException {
         }
 
     }

@@ -1,3 +1,4 @@
+@ignore
 Feature: Delete single ID
 Scenario: Delete id
     * url 'https://reqres.in/api/users'

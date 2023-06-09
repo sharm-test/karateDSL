@@ -6,7 +6,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.util.concurrent.TimeoutException;
 
 public class Producer {
@@ -31,15 +30,12 @@ public class Producer {
         }
     }
 
-    public Producer() throws IOException, TimeoutException {
-
-    }
     public void putMessage(String msg) throws IOException {
         channel.basicPublish("", QUEUE_NAME, null, msg.getBytes());
-        System.out.println("[x] Sent '" + msg + "'");
+        System.out.println(" [x] Sent '" + msg + "'");
     }
 
- public static void main(String[] args) throws IOException, TimeoutException {
+ public static void main(String[] args) throws IOException {
        Producer p = new Producer();
     p.putMessage("From main");
 }

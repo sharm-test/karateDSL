@@ -1,6 +1,6 @@
 Feature: Make a GET request to reqres API 
 Background:
-    * configure headers = read('headers.js')
+    * configure headers = read('classpath:headers.js')
 Scenario: Call the GET users API
     Given url url
     When method GET
